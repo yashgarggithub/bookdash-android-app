@@ -40,7 +40,7 @@ public class BookDashApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-
+//please mention why did you not setContentView
         AndroidThreeTen.init(this);
         Crashlytics crashlyticsKit = new Crashlytics.Builder()
                 .core(new CrashlyticsCore.Builder().disabled(BuildConfig.DEBUG).build()).build();
